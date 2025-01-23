@@ -75,7 +75,7 @@ if uploaded_file is not None:
                 st.write(customer_data.head())
 
                 # MongoDB connection
-                client = MongoClient("mongodb://localhost:27017/")  # Connect to MongoDB
+                client = MongoClient("mongodb:// 192.168.160.244:27017/")  # Connect to MongoDB
                 db = client["customer_segmentation_db"]  # Create a database called 'customer_segmentation_db'
                 collection = db["customer_segments"]  # Create a collection called 'customer_segments'
 
